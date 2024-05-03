@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Time Around</title>
+    <script src="./js/index.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+<script src="./js/model.js" defer></script>
+<script src="./js/api.js" defer></script>
+<script src="./js/list.js" defer></script>
+<link rel="stylesheet" href="./css/nav.css">
+</head>
+
+<body>
+
+    <!-- <i id="cart" class="bi bi-cart3"></i>
+    <svg href="" xmlns="http://www.w3.org/2000/svg" width="50" height="auto" fill="currentColor" class="bi bi-cart3"
+        viewBox="0 0 16 16">
+        <path
+            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+    </svg> --> 
+     <!-- <div class="header" style="position: absolute; display: end; align-items: center;
+     justify-content: space-between; margin-left: 95%; margin-top: -50px; ">
+        <div class="iconCart" style="position: relative; z-index: 1;
+        display: end;
+        ">
+         <a href="pages/cart.html">
+            <img src="./images/cart-dash.svg" style="width: 40px;">
+         </a>      
+            <div class="totalQuantity" style="position: absolute;
+            top: 0; right: 0; font-size: x-large; width: 40px;
+            height: 40px; border-radius: 50%; display: flex;
+            justify-content: center; align-items: center;
+            transform: translateX(20px);">0</div>
+          </div>
+    </div>  -->
+               <i class="bi bi-cart-dash"></i>
+
+    <!-- <header id="header">
+        <nav>
+            <div id="logo">
+                <img id="foto" href="index.html" src="./images/logos/blacklogo.png">
+            </div>
+            <ul>
+                <li><a href="#">Jakne</a></li>
+                <li><a href="#">T-Shirts</a></li>
+                <li><a href="#">Hoodies</a></li>
+                <li><a href="#">Fleeces</a></li>
+                <li><a href="#">Kemisha</a></li>
+                <li><a href="#">Trackbottoms&Shorts</a></li>
+                <li><a href="#">Tracktops</a></li>
+                <li><a href="#">Sneakers</a></li>
+                <li><a href="#">Jeans&Pants</a></li>
+                <li><a href="#">Caps</a></li>
+            </ul>
+            
+
+        </nav>
+    </header> -->
+    <header>
+        <nav>
+            <ul class='nav-bar'>
+                <li class='logo'><a href='#'><img src='./images/logos/blacklogo2.png'/></a></li>
+                <input type='checkbox' id='check' />
+                <span class="menu">
+                    <li><a href="">Jakne</a></li>
+                    <li><a href="">TShirts</a></li>
+                    <li><a href="">Hoodies</a></li>
+                    <li><a href="">Fleeces</a></li>
+                    <li><a href="">Kemisha</a></li>
+                    <li><a href="">Trackbottoms&Shorts</a></li>
+                    <li><a href="">Sneakers</a></li>
+                    <li><a href="">Jeans&Pants</a></li>
+                    <li><a href="">Caps</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <a href="pages/cart.html" >
+                    <svg class="svg"
+                      xmlns="http://www.w3.org/2000/svg" width="30" height="50" fill="black" class="bi bi-bag" viewBox="0 0 16 16">
+                        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                        
+                    </svg>
+                 </a>  
+                <label for="check" class="open-menu"><svg
+                    style="margin-bottom: -28px; margin-right: 0px;"
+                    xmlns="http://www.w3.org/2000/svg" width="30" height="50" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                  </svg></label>
+                
+            </ul>
+        </nav>
+        </header>
+    <div class="slideshow-container">
+        <h2 href="#" style="padding-left: 35px;">CURRENT TREND!</h2>
+        <div class="slides">
+            <img src="images/foto1.png" alt="Image 1">
+            <img src="images/foto2.png" alt="Image 2">
+            <img src="images/foto3.png" alt="Image 3">
+            <img src="images/foto4.png" alt="Image 4">
+            <img src="images/foto5.png" alt="Image 5">
+            <img src="images/foto6.png" alt="Image 6">
+            <img src="images/foto6.png" alt="Image 6">
+            <img src="images/foto7.png" alt="Image 6">
+            <img src="images/foto1.png" alt="Image 1">
+            <img src="images/foto2.png" alt="Image 2">
+            <img src="images/foto3.png" alt="Image 3">
+            <img src="images/foto4.png" alt="Image 4">
+            <img src="images/foto5.png" alt="Image 5">
+            <img src="images/foto6.png" alt="Image 6">
+            <img src="images/foto6.png" alt="Image 6">
+            <img src="images/foto7.png" alt="Image 6">
+        </div>
+    </div>
+    <div class="slider-container">
+        <h3>T-SHIRTS</h3>
+        <form class="slider" id="divCard" action="./pages/cart.html">
+          
+        </form>
+        
+    </div>
+    <div class="slider-container">
+        <h3>HOODIES</h3>
+         <form class="slider" id="hoodieForm" action="./pages/cart.html">
+          
+        </form>
+        
+    </div>
+    <div class="slider-container">
+        <h3>FLEECES</h3>
+        <form class="slider" id="fleeceForm" action="./pages/cart.html">
+          
+        </form>
+    </div>
+    <div class="slider-container">
+        <h3>CAPS</h3>
+        <form class="slider" id="capForm" action="./pages/cart.html">
+          
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="row">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+
+            <div class="row">
+                <ul>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Career</a></li>
+                </ul>
+            </div>
+
+            <div class="row">
+                SECOND HERE AROUND OFFICIAL Copyright © 2023 , KOSOVO - All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+
+</html>
+</body>
+
+</html>

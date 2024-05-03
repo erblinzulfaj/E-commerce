@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add</title>
+  <link rel="stylesheet" href="./../css/add.css">
+  <link rel="stylesheet" href="./../css/style.css">
+  <script src="./../js/add.js" defer></script>
+  <script src="./../js/api.js" defer></script>
+  <script src="./../js/model.js" defer></script>
+</head>
+<body style="background-color: rgb(25, 27, 27);">
+  <h1 style="display: flex; justify-content: center; align-items: center; color: azure; 
+  margin-bottom: 3%; margin-top: 3%;">ADD PRODUCT
+  </h1>
+  <hr style="color: aliceblue;">
+  <form id="productForm">
+    <label for="imageUrl"> URL:</label>
+    <input type="text" id="imageUrl" name="imageUrl" required>
+
+    <label for="code">Code:</label>
+    <input type="text" id="code" name="code" required>
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="description">Description:</label>
+    <input type="text" id="description" name="description" required>
+
+    <label for="price">Price:</label>
+    <input type="number" id="price" name="price" required>
+
+    <label for="size">Size:</label>
+    <input type="text" id="size" name="size" required>
+
+    <button type="submit" class="btn btn-danger" id="btnSave">Add Product</button>
+</form>
+
+</header>
+</body>
+</html>
